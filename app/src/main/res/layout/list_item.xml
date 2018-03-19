@@ -12,7 +12,13 @@
         android:text="abc" />
 
     <TextView
-        android:id="@+id/location"
+        android:id="@+id/location_offset"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/primary_location"
         android:layout_width="0dp"
         android:layout_weight="1"
         android:layout_height="wrap_content" />
