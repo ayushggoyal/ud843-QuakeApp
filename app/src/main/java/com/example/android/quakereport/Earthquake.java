@@ -7,12 +7,12 @@ package com.example.android.quakereport;
 class Earthquake {
     private String mMagnitude;
     private String mLocation;
-    private String mDate;
+    private long mTimeInMiliSec;
 
-    public Earthquake(String magnitude, String location, String date){
+    public Earthquake(String magnitude, String location, long timeInMiliSec){
         mMagnitude = magnitude;
         mLocation = location;
-        mDate = date;
+        mTimeInMiliSec = timeInMiliSec;
     }
 
     public String getMagnitude(){
@@ -23,7 +23,7 @@ class Earthquake {
         return mLocation;
     }
 
-    public String getDate(){
-        return mDate;
+    public long getTimeInMiliSec(){
+        return mTimeInMiliSec;
     }
 }
